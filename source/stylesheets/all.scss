@@ -41,10 +41,13 @@ header {
     align-items     : center;
     justify-content : space-between;
     height          : 80px;
+    min-width       : 100%;
+    flex            : 1;
     padding         : 0 ($padding * 10);
     .social {
         display   : flex;
         flex-wrap : nowrap;
+        opacity   : 0.5;
         .twitter {
             background : image_url('twitter.svg');
         }
@@ -62,9 +65,9 @@ header {
 }
 
 .content-wrapper {
-    position  : absolute;
     display   : flex;
     flex-wrap : nowrap;
+    position  : absolute;
     width     : 100%;
     height    : calc(100% - 80px);
 }
@@ -72,7 +75,7 @@ header {
 .primary-wrapper {
     display         : flex;
     justify-content : flex-end;
-    flex            : 18;
+    width           : 64%;
     background      : $color-secondary;
     padding         : ($padding * 10);
     .primary {
@@ -99,7 +102,7 @@ header {
 .secondary-wrapper {
     display         : flex;
     justify-content : flex-start;
-    flex            : 8;
+    width           : 36%;
     background      : $color-secondary;
     padding         : ($padding * 10);
     border-left     : 1px solid lighten($color-secondary, 10%);
@@ -146,15 +149,28 @@ header {
         height    : calc(100% - 64px);
     }
     .primary-wrapper {
-        flex      : 1;
-        min-width : 100%;
-        padding   : ($padding * 5);
+        width   : 100%;
+        padding : ($padding * 5);
     }
     .secondary-wrapper {
-        flex        : 1;
-        min-width   : 100%;
+        width       : 100%;
         border-left : 0;
         border-top  : 1px solid lighten($color-secondary, 10%);
         padding     : ($padding * 5);
+    }
+}
+
+@media screen and (max-width : 480px) {
+    h1 {
+        font-size : 24px;
+    }
+    header {
+        padding : 0 ($padding * 3);
+    }
+    .primary-wrapper {
+        padding : ($padding * 3);
+    }
+    .secondary-wrapper {
+        padding : ($padding * 3);
     }
 }
