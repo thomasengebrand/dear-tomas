@@ -33,18 +33,21 @@ header {
   align-items: center;
   justify-content: space-between;
   height: 80px;
+  min-width: 100%;
+  flex: 1;
   padding: 0 80px; }
-  /* line 45, all.scss */
+  /* line 47, all.scss */
   header .social {
     display: flex;
-    flex-wrap: nowrap; }
-    /* line 48, all.scss */
+    flex-wrap: nowrap;
+    opacity: 0.5; }
+    /* line 51, all.scss */
     header .social .twitter {
       background: url('/images/twitter.svg'); }
-    /* line 51, all.scss */
+    /* line 54, all.scss */
     header .social .facebook {
       background: url('/images/facebook.svg'); }
-    /* line 54, all.scss */
+    /* line 57, all.scss */
     header .social .twitter, header .social .facebook {
       height: 40px;
       width: 40px;
@@ -52,71 +55,71 @@ header {
       background-position: center center;
       background-repeat: no-repeat; }
 
-/* line 64, all.scss */
+/* line 67, all.scss */
 .content-wrapper {
-  position: absolute;
   display: flex;
   flex-wrap: nowrap;
+  position: absolute;
   width: 100%;
   height: calc(100% - 80px); }
 
-/* line 72, all.scss */
+/* line 75, all.scss */
 .primary-wrapper {
   display: flex;
   justify-content: flex-end;
-  flex: 18;
+  width: 64%;
   background: #060405;
   padding: 80px; }
-  /* line 78, all.scss */
+  /* line 81, all.scss */
   .primary-wrapper .primary {
     flex: 1; }
-    /* line 80, all.scss */
+    /* line 83, all.scss */
     .primary-wrapper .primary .meta {
       display: flex;
       flex-wrap: nowrap;
       margin-bottom: 32px; }
-      /* line 84, all.scss */
+      /* line 87, all.scss */
       .primary-wrapper .primary .meta p:first-child {
         padding-left: 0; }
-      /* line 87, all.scss */
+      /* line 90, all.scss */
       .primary-wrapper .primary .meta p:last-child {
         border-right: 0; }
-      /* line 90, all.scss */
+      /* line 93, all.scss */
       .primary-wrapper .primary .meta p {
         padding: 4px 8px;
         margin: 0;
         border-right: 1px solid #25181f; }
 
-/* line 99, all.scss */
+/* line 102, all.scss */
 .secondary-wrapper {
   display: flex;
   justify-content: flex-start;
-  flex: 8;
+  width: 36%;
   background: #060405;
   padding: 80px;
   border-left: 1px solid #25181f; }
-  /* line 106, all.scss */
+  /* line 109, all.scss */
   .secondary-wrapper .secondary {
     flex: 1; }
-    /* line 108, all.scss */
+    /* line 111, all.scss */
     .secondary-wrapper .secondary p {
       font-family: 'Waiting for the Sunrise', cursive;
       color: #9C9C9C;
       margin-top: 0;
       margin-bottom: 16px; }
 
-/* line 117, all.scss */
+/* line 120, all.scss */
 .auto-resizable-iframe {
   max-width: 100%;
   margin: 0px auto; }
 
-/* line 122, all.scss */
+/* line 125, all.scss */
 .auto-resizable-iframe > div {
   position: relative;
   padding-bottom: 56.25%;
   height: 0px; }
 
-/* line 128, all.scss */
+/* line 131, all.scss */
 .auto-resizable-iframe iframe {
   position: absolute;
   top: 0px;
@@ -125,30 +128,44 @@ header {
   height: 100%; }
 
 @media screen and (max-width: 960px) {
-  /* line 137, all.scss */
+  /* line 140, all.scss */
   h1 {
     font-size: 32px; }
 
-  /* line 140, all.scss */
+  /* line 143, all.scss */
   header {
     height: 64px;
     padding: 0 40px; }
 
-  /* line 144, all.scss */
+  /* line 147, all.scss */
   .content-wrapper {
     flex-wrap: wrap;
     height: calc(100% - 64px); }
 
-  /* line 148, all.scss */
+  /* line 151, all.scss */
   .primary-wrapper {
-    flex: 1;
-    min-width: 100%;
+    width: 100%;
     padding: 40px; }
 
-  /* line 153, all.scss */
+  /* line 155, all.scss */
   .secondary-wrapper {
-    flex: 1;
-    min-width: 100%;
+    width: 100%;
     border-left: 0;
     border-top: 1px solid #25181f;
     padding: 40px; } }
+@media screen and (max-width: 480px) {
+  /* line 164, all.scss */
+  h1 {
+    font-size: 24px; }
+
+  /* line 167, all.scss */
+  header {
+    padding: 0 24px; }
+
+  /* line 170, all.scss */
+  .primary-wrapper {
+    padding: 24px; }
+
+  /* line 173, all.scss */
+  .secondary-wrapper {
+    padding: 24px; } }

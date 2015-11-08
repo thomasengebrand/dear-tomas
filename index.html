@@ -1,25 +1,43 @@
 <!doctype html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8">
 
     <!-- Always force latest IE rendering engine or request Chrome Frame -->
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/favicon.ico">
 
     <!-- Use title if it's in the page YAML frontmatter -->
     <title>Dear Tomas</title>
 
     <link href="/stylesheets/normalize.css" rel="stylesheet" /><link href="/stylesheets/include.css" rel="stylesheet" />
     <script src="/javascripts/jquery-2.1.4.min.js"></script><script src="/javascripts/all.js"></script>
-  </head>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-  <body class="index">
-    <header>
+        ga('create', 'UA-69820257-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+</head>
+
+<body class="index">
+<header>
     <div>Dear Tomas</div>
     <div class="social">
-        <a href="" class="twitter"></a>
-        <a href="" class="facebook"></a>
+        <a href="#" class="twitter" title="Soon..."></a>
+        <a href="#" class="facebook" title="Soon..."></a>
     </div>
 </header>
 
@@ -30,13 +48,13 @@
 
             <div class="meta">
                 <p>9 November, 2015</p>
-                <p>London, UK</p>
+                <!--<p>London, UK</p>-->
                 <p>Music: Dear Tomas</p>
                 <p>Video: <a href="https://www.facebook.com/NorthAgain/" target="_blank">North Again</a></p>
             </div>
             <div class="auto-resizable-iframe">
                 <div>
-                    <iframe src="https://www.youtube.com/embed/-VIIE9JDToQ" frameborder="0"
+                    <iframe src="https://www.youtube.com/embed/cYx730Y1CtI" frameborder="0"
                             allowfullscreen id="movie_player"></iframe>
                 </div>
             </div>
@@ -75,5 +93,6 @@
         </div>
     </div>
 </div>
-  </body>
+
+</body>
 </html>
